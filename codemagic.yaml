@@ -5,6 +5,6 @@ workflows:
       flutter: 3.19.6
     scripts:
       - flutter pub get
-      - flutter build ipa --release
+      - flutter build ipa --release --no-codesign
     artifacts:
       - build/ios/ipa/*.ipa
